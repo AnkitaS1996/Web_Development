@@ -20,6 +20,8 @@
         button{
             width: 100px;
             height: 50px;
+            margin: auto;
+            font-size: 20px;
             border-radius: 5px;
             border: none;
             background-color: #ccc;
@@ -34,13 +36,31 @@
             border: 1px solid;
             border-collapse: collapse;
             background-color: white;
-
         }
         .radio1{
             font-size: 25px;
             text-align: left;
             padding: 10px;
             background-color: rgb(196, 203, 203);
+        }
+        .LeftArrow{
+            background-color: red;
+            color: white;
+            width: 205px;
+        }
+        .Equal{
+            height: 105px;
+            color: white;
+            background-color: green;
+
+        }
+        .Zero{
+            width: 205px;
+
+        }
+        .PlusMinus,.Clear{
+            background-color: red;
+            color: white;
         }
         
     
@@ -77,9 +97,9 @@
             <td><button>Exp</button></td>
             <td><button>(</button></td>
             <td><button>)</button></td>
-            <td colspan="2"><button>&LeftArrow;</button></td>
-            <td><button>C</button></td>
-            <td><button>+/-</button></td>
+            <td colspan="2"><button class="LeftArrow">&LeftArrow;</button></td>
+            <td><button class="Clear">C</button></td>
+            <td><button class="PlusMinus">+/-</button></td>
             <td><button>&Sqrt;</button></td>
         </tr>
         <tr>
@@ -119,7 +139,7 @@
             <td><button>2</button></td>
             <td><button>3</button></td>
             <td><button>-</button></td>
-            <td rowspan="2"><button>=</button></td>
+            <td rowspan="2"><button class="Equal">=</button></td>
         </tr>
         <tr>
             <td><button>sin<sup>-1</sup></button></td>
@@ -128,7 +148,7 @@
             <td><button><sup>y</sup>&Sqrt;</button></td>
             <td><button><sup>3</sup>&Sqrt;</button></td>
             <td><button>|X|</button></td>
-            <td colspan="2"><button>0</button></td>
+            <td colspan="2"><button class="Zero">0</button></td>
             <td><button>.</button></td>
             <td><button>+</button></td>
         </tr>
