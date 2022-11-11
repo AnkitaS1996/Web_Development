@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment No 9</title>
+    <style>
+        body{
+            background-color: white;
+        }
+        section{
+            background-color: gray;
+            padding: 10px;
+        }
+        section>div{
+            margin: 10px 30px 10px 30px;
+        }
+        .header>div{
+            display: inline-block;
+            padding: 10px;
+            width: 250px;
+            background-color: #ccc;
+            text-align: center;
+            font-size: 25px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        .Cotainer{
+            background-color: gray;
+        }
+        .Container>div{
+            display: inline-block;
+            margin: 10px 5px 10px 5px;
+        }
+        .Container>.Main{
+            width: 980px;
+            height: 210px;
+            display: inline-block;
+            background-color: #ccc;
+            margin: 10px 20px 20px 5px;
+        }
+        .Container>.Box>.Box1{
+            width: 380px;
+            height: 100px;
+            background-color: #ccc;
+            margin: 10px 5px 10px 10px;
+            /* text-align: center; */
+           
+        }
+        .Box2>div{
+            height: 200px;
+            width: 250px;
+            display: inline-block;
+            background-color: #ccc;
+            padding: 10px;
+            margin: 0px 5px 10px 5px;
+        }
+        .Image{
+            margin: 10px 40px 10px 35px; 
+            background-color: #ccc;
+        }
+        .Image>.Img1{
+            height: 300px;
+            width: 850px;
+            margin: 20px 10px 0px 10px; 
+            color: #ccc;
+            background-image: url("../../Assets/Image10.jpg");
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+        .Image>div{
+            display: inline-block;
+            /* margin: 20px; */
+            height: 200px;
+            width: 500px;
+            align-items: center;
+        }
+        .Info>h1{
+            margin-top: 50px;
+            text-align:left ;
+        }
+        button{
+            color: wheat;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: larger;
+            background-color: brown;
+        }
+        .game>div{
+            height: 12px;
+            width:460px;
+            text-align: center;
+            background-color: black;
+            display: inline-block;
+            margin:5px;
+            font-size: larger;
+        }
+        .Img2>div{
+            height: 200px;
+            width: 380px;
+            display: inline-block;
+            background-color: #ccc;
+            padding: 10px;
+            margin: 0px 5px 10px 5px;  
+        }
+        .Img2>.FImg>img{
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 200px;
+            width: 380px;
+        }
+        .Footer{
+            background-color: #ccc;
+            border: 1px solid;
+        }
+         .Footer>div{
+            display: inline-block;
+            margin: 10px 5px 5px 5px; 
+            text-align: center;   
+        }
+        .Footer>.Heading1{
+            height: 150px;
+            width:500px;
+            margin: 10px 20px 10px 500px;
+            background-color: gray;
+        }
+        .Box2>a{
+            display: block;
+            text-decoration: none;
+            padding:2px;
+            margin:10px 10px 5px 100px;
+            color: black;
+            font-size: 15px;
+        } 
+    </style>
+</head>
+<body>
+    <section>
+        <div class="header">
+            <div>Tocos</div>
+            <div>Beers</div>
+            <div>Wines</div>
+            <div>Deserts</div>
+            <div>Reservations</div>
+        </div>
+        <div class="Container">
+            <div class="Main"></div>       
+            <div class="Box">
+                <div class="Box1"></div>
+                <div class="Box1"></div>
+            </div>
+        </div>
+        <div class="Box2">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="Image">
+            <div class="Img1"></div>
+            <div class="Info">
+                <h1>Headline </h1><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est inventore placeat culpa aliquam voluptas iusto, excepturi laboriosam! Odio, aperiam itaque laborum quo accusamus, ducimus quibusdam optio illum hic quisquam nobis! <button>Learn More</button></p>
+                
+            </div>
+        </div>
+        <div class="game">
+            <div></div>
+            <div class="name" style="background-color: gray"><b>Instant Game</b></div>
+            <div></div>
+        </div>
+        <div class="Img2">
+            <div class="FImg"><img src="../../Assets/Food_Img1.jpg" alt="foodImg1"> </div>
+            <div class="FImg"><img src="../../Assets/Food_Img2.jfif" alt="foodImg2"></div>
+            <div class="FImg"><img src="../../Assets/Food_Img3.jfif" alt="foodImg3"></div>
+            <div class="FImg"><img src="../../Assets/Food_Img4.jfif" alt="foodImg4"></div>
+            <div class="FImg"><img src="../../Assets/Food_Img5.jfif" alt="foodImg5"></div>
+        </div>
+    </section>
+    <div class="Footer">
+        <div class="Box2">
+            <a href="#">Tacos</a>
+            <a href="#">Beers</a>
+            <a href="#">Wines</a>
+            <a href="#">Deserts</a>
+        </div>
+        <div class="Heading1"></div>
+    </div>
+</body>
+</html>
