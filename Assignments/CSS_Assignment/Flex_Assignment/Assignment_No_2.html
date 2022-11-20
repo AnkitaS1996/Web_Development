@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flex Assignment 02</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        header>p{
+            padding: 30px;
+            font-size: 30px;
+            text-align: center;
+            justify-content: center;
+            background-color: brown;
+            color: white;
+            border-radius: 5px;
+        }
+        .Container{
+            display: flex;
+            border: 1px solid;
+            margin: 5px;
+            flex-grow: 4;
+        }
+        .Product{
+            flex-grow: 1;
+            border: 1px solid;
+            margin: 5px;
+        }
+        .items{
+            border: 1px solid;
+            background-color: gray;
+            margin: 5px;
+            flex-grow: 1;
+            height: 150px;
+        }
+        section{
+            display: flex;   
+        }
+        .Sidebar{
+            flex-grow: 1;
+            background-color: aqua;
+            padding: 10px;
+        }
+        .Sidebar>a{
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            padding: 20px;
+            font-size: 20px;
+            color: black;
+        }
+        a:hover{
+            color: gray;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <p>Header</p>
+    </header>
+    <section>
+        <div class="Container">
+            <div class="Product">
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+            </div>
+            <div class="Product">
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div> 
+            </div>
+            <div class="Product">
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+            </div>
+        </div>
+        <div class="Sidebar">
+            <a href="https://www.github.com">Github</a>
+            <a href="https://www.Facebook.com">Facebook</a>
+            <a href="https://www.Whatsapp.com">Whatsapp</a>
+            <a href="https://www.instagram.com">Instagram</a>
+        </div>
+    </section>
+</body>
+</html>
