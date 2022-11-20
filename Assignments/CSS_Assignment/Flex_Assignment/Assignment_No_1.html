@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flex Assignment 01</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        header>p{
+            padding: 30px;
+            font-size: 30px;
+            text-align: center;
+            justify-content: center;
+            background-color: brown;
+            color: white;
+            border-radius: 5px;
+        }
+        section{
+            display: flex;   
+        }
+        .Sidebar{
+            flex-grow: 1;
+            background-color: gray;
+            padding: 10px;
+        }
+        .Sidebar>a{
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            padding: 20px;
+            font-size: 20px;
+            color: black;
+        }
+        .Product{
+            flex-grow: 6;
+        }
+        .Product>.SubProduct{
+            display: flex;
+            margin: 5px;
+        }
+        .items{
+            flex-grow: 1;
+            height: 200px;
+            margin: 10px;
+            background-color: blue;
+        }
+        a:hover{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>Header</p>
+    </header>
+    <section>
+        <div class="Sidebar">
+            <a href="https://www.github.com">Github</a>
+            <a href="https://www.Facebook.com">Facebook</a>
+            <a href="https://www.Whatsapp.com">Whatsapp</a>
+            <a href="https://www.instagram.com">Instagram</a>
+        </div>
+        <div class="Product">
+            <div class="SubProduct">
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+            </div>
+            <div class="SubProduct">
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+            </div>
+            <div class="SubProduct">
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
