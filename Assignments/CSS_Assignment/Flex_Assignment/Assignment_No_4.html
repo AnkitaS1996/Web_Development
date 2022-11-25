@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flex Assignment 04</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        header>p{
+            padding: 30px;
+            font-size: 50px;
+            text-align: center;
+            justify-content: center;
+            background-color: aqua;
+            border-radius: 5px;
+        }
+        .Navbar{
+            display: flex;
+            justify-content: flex-end;
+            border: 1px solid;
+            background-color: blanchedalmond;
+        }
+        .Navbar>div>a{
+            text-decoration: none;
+            padding: 10px;
+            font-size: 30px;
+            margin: 20px;
+            color: black;            
+        }
+        .Navbar>div>a:hover{
+            background-color: brown;
+            color: white;
+        }
+        .Sidebar{
+             flex-grow: 1;
+            background-color: gray;
+            padding: 10px;
+        }
+        .Sidebar>a{
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            padding: 20px;
+            font-size: 20px;
+            color: black;
+        }
+        section{
+            margin: 5px;
+            display: flex;
+        }
+        .Container{
+            border: 1px solid;
+             display: flex; 
+            margin: 5px;
+            flex-grow: 5;
+        }
+        .Container>div{
+             flex-grow: 1;
+        }
+        .items{
+            /* border: 1px solid; */
+            background-color: blueviolet;
+            height: 200px;
+            margin: 5px;
+        }
+        .Product1{
+            margin: 5px;
+           display: block;
+        }
+        .SubProduct{
+            border: 1px solid Red;
+            margin: 5px;
+        }
+        .Container>h2 ,.SubProduct{
+            display: block;
+        }
+        h2{
+            text-align: center;
+            justify-content: center;
+        }
+        .Sidebar>a:hover{
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <p>Header</p>
+    </header>
+    <div class="Navbar">
+        <div><a href="#">Home</a></div>
+        <div><a href="#">About</a></div>
+        <div><a href="#">Contact Us</a></div>
+        <div><a href="#">Carrer</a></div>
+    </div>
+    <section>
+        <div class="Sidebar">
+            <a href="">Github</a>
+            <a href="">Facebook</a>
+            <a href="">Whatsapp</a>
+            <a href="">Instagram</a>
+        </div>
+        <div class="Container">
+            <div class="Product1">
+                <h2>Product1</h2>
+                <div class="SubProduct">
+                    <div class="items"></div>
+                    <div class="items"></div>
+                </div>
+            </div>
+            <div class="Product1">
+                <h2>Product2</h2>
+                <div class="SubProduct">
+                
+                    <div class="items"></div>
+                    <div class="items"></div>
+                </div>
+            </div>
+            <div class="Product1">
+                <h2>Product3</h2>
+                <div class="SubProduct">
+                    <div class="items"></div>
+                    <div class="items"></div>
+                </div>
+            </div>
+        </div>
+    </section>  
+</body>
+</html>
