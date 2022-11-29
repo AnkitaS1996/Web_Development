@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flex Assignment 05</title>
+    <style>
+        /* Body Code */
+        body{
+            background-color: rgb(209, 202, 202);
+            margin: 0px;
+        }
+        /* Header Code */
+        .header{
+            text-align: right;
+            background-color: #aaa;
+            padding: 20px;
+            display: flex; 
+        }
+        .Logo{
+            margin-right: 650px;
+            width: 100px;
+            border: 1px solid;
+            padding: 30px;
+            text-align: center;
+            /* flex-shrink: 5; */
+        }
+        .header>div{
+            /* display: inline-block; */
+            padding: 10px;
+           
+        }
+        .header>div>a{
+            color: black;
+            /* justify-content: space-between; */
+            text-decoration: none;
+            flex-grow: 11;
+            margin-left: 80px;
+        }
+        a:hover{
+            background-color: rgb(151,225,121);
+            color: white;
+            border-radius: 3px;
+        }
+        /* slide Code */
+        .Slide{
+            display:flex;
+        } 
+        /* Main Code */
+        main{
+            flex-grow: 2;
+            margin: 20px 20px 10px 10px; 
+            padding: 10px;
+        }
+        .Img1{
+            margin: 10px 50px 20px 30px;
+            height: 400px;
+            width: 900px;
+            background-color: #aaa;
+        }
+        img{
+            width: 90%;
+            height: 90%;
+        }
+        main>h3{
+            text-align: center;  
+        }
+        .Container{
+            justify-content: space-between;
+            background-color: #aaa;
+            display: flex;
+            margin: 10px 20px 5px 30px;
+        }
+        .Date{
+            color: white;
+            flex-grow: 1;
+            background-color: rgb(76,74,74);
+            padding: 15px;
+            text-align: center;
+            justify-content: center;
+        }
+        .Description{
+            padding: 15px;
+            flex-grow: 4;
+            margin-left:100px;
+        }
+
+        /* Footer Code */
+        footer{
+            padding: 50px;
+            margin:10px 10px 5px 30px;
+            background-color: #aaa;
+        }
+        footer>p{
+            text-align: center;
+        } 
+
+        /*Section Code */
+        section{
+            flex-grow: 6;
+            /* border: 1px solid; */
+            margin: 0px 100px 10px 0px;
+            background-color: #aaa;
+        }
+        /* aside Code */
+        aside{
+            margin: 5px;
+        }
+        .Image2{
+            padding: 10px;
+            margin: 30px 10px 15px;
+            text-align: center;
+        }
+        .Container1{
+            display: flex;
+            /* margin: 10px 10px; */
+        }
+        .Name{
+             margin: 10px;
+             padding: 5px;
+        }
+        .Description1{
+             padding: 5px;
+            margin: 5px 20px;
+            border-bottom: 1px solid;
+        }    
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="Logo">Logo</div>
+        <div><a href="#">Home</a></div>
+        <div><a href="#">About Us</a></div>
+        <div><a href="#">Carrer</a></div>
+        <div><a href="#">Contact Us</a></div>
+    </div>
+    <div class="Slide">
+        <main>
+            <div class="Img1">
+                <img src="../../../Assets/Image6.png" alt="Laptop">
+            </div>
+            <h3>Tag Line Of steve Job</h3>
+            <div class="Container">
+                <div class="Date">Date And Year</div>
+                <div class="Description">Event Occured At that time</div>
+            </div>
+            <div class="Container">
+                <div class="Date">Date And Year</div>
+                <div class="Description">Event Occured At that time</div>
+            </div>
+            <div class="Container">
+                <div class="Date">Date And Year</div>
+                <div class="Description">Event Occured At that time</div>
+            </div>
+            <div class="Container">
+                <div class="Date">Date And Year</div>
+                <div class="Description">Event Occured At that time</div>
+            </div>
+            <footer>
+                <p>Any Quotes Of Steve Job</p>
+            </footer>
+        </main>
+
+    <section>
+        <div class="Image2">
+            <img src="../../../Assets/image4.png" alt="Image2">
+        </div>
+        <aside>
+            <div class="Container1">
+                <div class="Name">Born</div>
+                <div class="Description1">Loream ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            </div>
+            <div class="Container1">
+                <div class="Name">Died</div>
+                <div class="Description1">Loream ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            </div>
+            <div class="Container1">
+                <div class="Name">Occpation</div>
+                <div class="Description1">Loream ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            </div>
+            <div class="Container1">
+                <div class="Name">Parents</div>
+                <div class="Description1">Loream ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            </div> 
+        </aside> 
+    </section>
+    </div>
+</body>
+</html>
